@@ -25,7 +25,7 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: var(--color-body);
   line-height: 1.5;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h1,
@@ -199,7 +199,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -289,6 +289,7 @@ a {
 }
 
 .input-group .input {
+  width: 0;
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
@@ -369,10 +370,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -434,7 +431,7 @@ a {
 /* Quotes */
 
 .quote {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--color-body-darker);
   font-style: italic;
   line-height: 1.3;
@@ -449,7 +446,7 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
+  font-size: 110%;
   font-weight: 500;
   margin-bottom: 0;
   font-style: normal;
@@ -457,7 +454,7 @@ a {
 
 .quote__organisation {
   color: var(--color-headings);
-  font-size: 2rem;
+  font-size: 1.8rem;
   opacity: 0.4;
   font-style: normal;
 }
@@ -502,12 +499,12 @@ a {
 /* Testimonials */
 
 .testimonial {
-  padding: 3rem;
+  padding: 3rem 2rem;
 }
 
 .testimonial__image {
   position: relative;
-  margin: 0 3rem;
+  margin: 0 4rem;
 }
 
 .testimonial__image > img {
@@ -518,6 +515,11 @@ a {
   position: absolute;
   top: 3rem;
   right: -32px;
+}
+
+.testimonial .quote {
+  font-size: 110%;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -546,6 +548,11 @@ a {
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.callout--signup {
+  position: relative;
+  top: 5rem;
 }
 
 .callout__heading {
@@ -614,7 +621,7 @@ a {
 /* Block */
 
 .block {
-  --pading-verticle: 6rem;
+  --pading-verticle: 5rem;
   padding: var(--pading-verticle) 2rem;
 }
 
@@ -640,12 +647,12 @@ a {
 
 .block--skew-left {
   padding-bottom: calc(var(--pading-verticle) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 .block--skew-right {
   padding-bottom: calc(var(--pading-verticle) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .container {
@@ -750,11 +757,12 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
@@ -831,6 +839,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -852,6 +861,7 @@ a {
 }
 
 .footer__heading {
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 600;
 }
